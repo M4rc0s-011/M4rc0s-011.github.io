@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="StyleDesencriptador.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M316.14349365234375,212.55606079101562C315.54558817545575,201.0463434855143,306.7264658610026,151.71898396809897,312.5560607910156,143.4977569580078C318.3856557210286,135.27652994791666,339.61134847005206,163.97608184814453,351.1210632324219,163.22869873046875C362.6307779947917,162.48131561279297,374.5889383951823,131.3901392618815,381.6143493652344,139.01345825195312C388.63976033528644,146.63677724202475,391.33033243815106,197.30942026774088,393.2735290527344,208.96861267089844" fill="none" stroke-width="25" stroke="hsl(0, 66%, 37%)" stroke-linecap="round"></path><defs><linearGradient id="SvgjsLinearGradient1002"><stop stop-color="hsl(28, 66%, 37%)" offset="0"></stop><stop stop-color="hsl(28, 66%, 37%)" offset="1"></stop></linearGradient></defs></svg>
+
+        </div>
+        <div class="titulo">
+            <p>Encriptador y 
+                desencriptador de texto</p>
+        </div>
+    </header>
+
+    <main class="cuerpo-pagina">
+
+        <div class="div-textarea">
+            <textarea id="texto" class="textarea" placeholder="Escribe tu texto aquí."></textarea>
+            <p class="aviso">&#9786 Solo letras minúsculas y sin acentos.</p>
+            <button class="buttom" onclick="desencriptarTexto()">Desencriptar</button>
+            <button class="buttom2" onclick="encriptarTexto()">Encriptar</button>
+        </div>
+        <div class="resultado" id="resultado"></div>
+
+    </main>
+
+    <script>
+
+        var resultado = ""
+
+        function encriptarTexto() {
+            var textarea = document.getElementById("texto");
+            var texto = textarea.value;
+
+            if (texto == "") {
+                document.getElementById("resultado").textContent = "No se ha encontrado ningún mensaje. Por favor coloca un mensaje para encriptar o desencriptar.";
+                return;
+            }
+
+            texto = texto.replace(/e/g, "enter");
+            texto = texto.replace(/i/g, "imes");
+            texto = texto.replace(/a/g, "ai");
+            texto = texto.replace(/o/g, "ober");
+            texto = texto.replace(/u/g, "ufat");
+
+            document.getElementById("resultado").textContent = texto;
+        }
+
+        function desencriptarTexto() {
+            var textarea = document.getElementById("texto");
+            var texto = textarea.value;
+
+            if (texto == "") {
+                document.getElementById("resultado").textContent = "No se ha encontrado ningún mensaje. Por favor coloca un mensaje para encriptar o desencriptar.";
+                return;
+            }
+
+            texto = texto.replace(/enter/g, "e");
+            texto = texto.replace(/imes/g, "i");
+            texto = texto.replace(/ai/g, "a");
+            texto = texto.replace(/ober/g, "o");
+            texto = texto.replace(/ufat/g, "u");
+
+            document.getElementById("resultado").textContent = texto;
+        }
+    </script>
+</body>
+</html>

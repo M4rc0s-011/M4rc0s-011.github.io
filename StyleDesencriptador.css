@@ -1,0 +1,193 @@
+.logo{
+    position: absolute;
+    left: -90px;
+    top: -30px;
+    width: 300px;
+}
+.titulo{
+    position: absolute;
+    left: 20%;
+    top: 35px;
+    color: #ce4040;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 45px;
+    
+
+}
+
+.div-textarea{
+    position: absolute;
+    top: -5%;
+    width: 50%;
+    
+
+}
+
+.textarea{
+    position: relative;
+    width: 568px;
+    height: 300px;
+    left: -50px;
+    top: 10px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    text-align: left;
+    border: none;
+    border-radius: 15px;
+    margin-left: 80px;
+    margin-top: 200px;
+    
+}
+
+::placeholder{
+    color: #ce4040;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.resultado {
+    position: absolute;
+    right: 100px;
+    background-color: rgb(240, 104, 104);
+    text-align: left;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+    width: 568px;
+    height: 300px;
+    margin-top: 20px;
+    padding: 10px;
+    top: 150px;
+}
+
+
+.aviso{
+    position: absolute;
+    right: 58%;
+    top: 111%;
+
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #6B7280;
+}
+
+.buttom{
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    left: 20px;
+    top: 600px;
+    
+    background: #cf7373;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: azure;
+    border: none;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+    transition: 400ms;
+}
+
+.buttom2{
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    left: 340px;
+    top: 600px;
+    
+    background: #E62424;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: azure;
+    border: none;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+    transition: 400ms;
+    
+    
+}
+
+.buttom2:hover{
+width: 305px;
+height: 50;
+font-size: 42px;
+
+}
+.buttom:hover{
+    width: 305px;
+    height: 50;
+    font-size: 42px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .textarea{
+        left: -10%;
+    }
+    .resultado{
+        top: 40%;
+        left: 2%;
+    }
+    .aviso{
+        top: 175%;
+        left: -10%;
+    }
+    .buttom{
+        top: 180%;
+    }
+
+    .buttom2{
+        top: 180%;
+    } 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .titulo{
+        font-size: 30px;
+    }
+    .textarea{
+        left: -15%;
+    }
+    .resultado{
+        top: 40%;
+        left: 2%;
+    }
+    .aviso{
+        top: 175%;
+        left: 10%;
+    }
+    .buttom{
+        top: 180%;
+    }
+
+    .buttom2{
+        top: 180%;
+    }
+}  
+
